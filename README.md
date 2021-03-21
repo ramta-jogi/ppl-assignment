@@ -1,5 +1,5 @@
 # PPL Assignment
-Implemeting a parser for a language specifiaction given in our course "Principles of Programming Languages" in C.
+This repo contains implementation of a parser for a language specifiaction given in our course "Principles of Programming Languages" in C. It uses various data structures like linked list, stack and hash table, all of which have been implemented from scratch.
 
 # Language Description
 The included PDF file contains the language descirption.
