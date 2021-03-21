@@ -7,7 +7,9 @@ The included PDF file ```assignment 1.pdf``` contains the language descirption.
 # Using this repo
 Clone this repo, move inside the ```PPL-Assignment``` directory, use the command ```make compileAll``` in the terminal to compile all the files.
 
-Then, use ```make run``` to run the program. Make sure the file ```sourcecode.txt``` is present in the directory with the code you want to parse.
+Then, use ```make run``` to run the program. By default, the program searches for ```sourcecode.txt``` to get the code, so make sure this file is present in the directory.
+
+A few test cases have been included in the ```testcases``` directory inside ```PPL-Assignment```.
 
 The program runs in a loop. Everytime it asks you to enter an option, you can do any one of the five tasks
 - Option 0: Exits
