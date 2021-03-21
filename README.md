@@ -5,7 +5,7 @@ This repo contains implementation of a parser for a language specifiaction given
 The included PDF file ```assignment 1.pdf``` contains the language descirption.
 
 # Using this repo
-Clone this repo, move inside the ```PPL-assignment``` directory, use the command ```make compileAll``` in the terminal to compile all the files.
+Clone this repo, move inside the ```PPL-Assignment``` directory, use the command ```make compileAll``` in the terminal to compile all the files.
 
 Then, use ```make run``` to run the program. Make sure the file ```sourcecode.txt``` is present in the directory with the code you want to parse.
 
