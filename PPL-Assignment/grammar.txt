@@ -1,0 +1,47 @@
+Start program ( ) { DeclarationStatements AssignmentStatements }
+DeclarationStatements DeclarationStatement DeclarationStatements
+DeclarationStatements DeclarationStatement
+DeclarationStatement declare identifier : DataType
+DeclarationStatement declare list of variables MultipleVariables : DataType
+MultipleVariables identifier MultipleVariables
+MultipleVariables identifier identifier
+DataType PrimitiveDataType
+DataType array RectangularDimensions of PrimitiveDataType
+DataType jagged array  [ integerConstant .. integerConstant ] EmptyDimensions of PrimitiveDataType RowDefJaggedArray
+PrimitiveDataType integer ;
+PrimitiveDataType boolean ;
+PrimitiveDataType real ;
+RectangularDimensions RectangularDimension RectangularDimensions
+RectangularDimensions RectangularDimension
+RectangularDimension [ Index .. Index ]
+EmptyDimensions [ ] [ ]
+EmptyDimensions [ ]
+RowDefJaggedArray R1 [ integerConstant ] : size integerConstant : values { ValuesList } RowDefJaggedArray
+RowDefJaggedArray R1 [ integerConstant ] : size integerConstant : values { ValuesList }
+ValuesList NumbersList ValuesList
+ValuesList NumbersList
+NumbersList integerConstant NumbersList
+NumbersList integerConstant
+NumbersList ;
+AssignmentStatements AssignmentStatement AssignmentStatements
+AssignmentStatements AssignmentStatement
+AssignmentStatement SingleTerm = Expression ;
+Expression Term PlusMinus Expression
+Expression Term
+Term LogicalOrExpression MultiplyDivide Term
+Term LogicalOrExpression
+LogicalOrExpression LogicalAndExpression ||| LogicalOrExpression
+LogicalOrExpression LogicalAndExpression
+LogicalAndExpression SingleTerm &&& LogicalAndExpression
+LogicalAndExpression SingleTerm
+SingleTerm identifier [ IndexList ]
+SingleTerm identifier
+SingleTerm integerConstant
+IndexList Index IndexList
+IndexList Index
+Index identifier
+Index integerConstant
+PlusMinus +
+PlusMinus -
+MultiplyDivide *
+MultiplyDivide /

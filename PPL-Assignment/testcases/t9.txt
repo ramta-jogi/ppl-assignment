@@ -1,0 +1,11 @@
+program ( )
+{
+declare list of variables a b c : integer ;
+declare r : real ;
+declare list of variables x y z : boolean ;
+a = b + c ;
+x = y + z ;
+x = x &&& y ||| a ;
+r = r / r ;
+r = a / b ;
+}
